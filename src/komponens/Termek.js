@@ -1,15 +1,15 @@
 import "./Termek.css";
 
 function Termek(props) {
-    function katt(szoveg){
-        props.katt(szoveg);
+    function katt(){
+        props.katt(props);
     }
     return (
         <div className="termek">
             <p>{props.adat.cim}</p>
             <p>{props.adat.szerzo}</p>
             <p>{props.adat.ar}</p>
-            <button>OK</button>
+            <button onClick={katt}>OK</button>
         </div>
     );
 }
